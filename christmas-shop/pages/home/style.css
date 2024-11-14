@@ -1,16 +1,16 @@
 @font-face {
-    font-family: Montserrat-regular;
-    src: url("/christmas-shop/assets/font/Montserrat-Regular.woff2") format(".woff2");
+    font-family: "Montserrat-SB";
+    src: url("/christmas-shop/assets/font/Montserrat-SemiBold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Montserrat-semibold";
-    src: url("/christmas-shop/assets/font/Montserrat-SemiBold.woff2") format(".woff2");
+    font-family: "Montserrat";
+    src: url("/christmas-shop/assets/font/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: Allura;
-    src: url("/christmas-shop/assets/font/Allura-Regular.woff2") format(".woff2");
+    font-family: "Allura";
+    src: url("/christmas-shop/assets/font/Allura-Regular.woff") format(".woff");
 }
 
 
@@ -36,7 +36,7 @@
 }
 
 .text-logo {
-    font-family: "Montserrat-regular";
+    font-family: "Montserrat-SB";
     font-weight: 600;
     font-size: 12px;
     line-height: 130%;
