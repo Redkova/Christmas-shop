@@ -13,6 +13,11 @@
     src: url("/christmas-shop/assets/font/Allura-Regular.woff") format(".woff");
 }
 
+body {
+    width: 100%;
+    min-width: 1440px;
+    margin: 0 auto;
+}
 
 .header {
     display: flex;
@@ -28,6 +33,7 @@
     margin-bottom: 12px;
     margin-left: 82px;
     width: 141px;
+    height: 40px;
 }
 
 .logo-icon {
@@ -49,6 +55,9 @@
     display: flex;
     flex-direction: row;
     list-style: none;
+    height: 40px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .nav-item {
