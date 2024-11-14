@@ -43,12 +43,35 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #181C29;
-    ;
-
 }
 
 .nav-list {
     display: flex;
     flex-direction: row;
     list-style: none;
+}
+
+.nav-item {
+    padding: 12px 20px;
+}
+
+.nav-item:nth-child(1),
+.nav-item:nth-child(2),
+.nav-item:nth-child(3) {
+    margin-right: 8px;
+}
+
+.nav-item:last-child {
+    margin-right: 82px;
+}
+
+.nav-link {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #181C29;
+    text-decoration: none;
 }
