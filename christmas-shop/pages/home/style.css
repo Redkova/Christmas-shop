@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 82px;
+    padding: 12px 20px;
+}
+
+.text-logo {
+    
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
