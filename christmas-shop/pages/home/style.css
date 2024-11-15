@@ -305,3 +305,37 @@ body {
     border-radius: 20px;
     margin-right: 20px;
 }
+
+.slider-buttons {
+    width: 1276px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 82px;
+}
+
+.button-right,
+.button-left {
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 56px;
+    height: 56px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-right,
+.arrow-left {
+    width: 14px;
+    height: 14px;
+    fill: #FFFFFF;
+}
+
+.button-left {
+    margin-left: 20px;
+}
