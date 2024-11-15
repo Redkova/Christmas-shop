@@ -99,8 +99,6 @@ body {
     color: #FF4646;
 }
 
-
-
 .hero {
     width: 1440px;
     height: 524px;
@@ -162,18 +160,18 @@ body {
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    color: #FFFFFF;  
+    color: #FFFFFFFF;  
 }
 
 .hero-text:last-child {
     margin-top: 12px;
     margin-bottom: 60px;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFFFFFFF;
 }
 
 .hero-button-container:hover .hero-button {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #FFFFFFFF;
 }
 
 .hero-button-container:hover .hero-button-text {
