@@ -312,6 +312,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-top: 20px;
     margin-left: 82px;
 }
 
@@ -333,9 +334,22 @@ body {
 .arrow-left {
     width: 14px;
     height: 14px;
-    fill: #FFFFFF;
+    stroke: #FFFFFF;
 }
 
 .button-left {
     margin-left: 20px;
+}
+
+.button-right:hover,
+.button-left:hover {
+    background-color: #FFFFFF;
+}
+
+.button-right:hover .arrow-right{
+    stroke: #FF4646;
+}
+
+.button-left:hover .arrow-left{
+    stroke: #FF4646;
 }
