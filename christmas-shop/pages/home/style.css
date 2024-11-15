@@ -15,11 +15,12 @@
 
 body {
     width: 100%;
-    min-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
 .header {
+    width: 1440px;
     height: 64px;
     display: flex;
     flex-direction: row;
@@ -34,13 +35,13 @@ body {
     margin-top: 12px;
     margin-bottom: 12px;
     margin-left: 82px;
-    width: 141px;
+    border-radius: 12px;
     height: 40px;
+    cursor: pointer;
 }
 
 .logo-icon {
-    margin-right: 8px;
-    margin-left: 20px;
+    margin: 8px 8px 8px 20px;
 }
 
 .text-logo {
@@ -51,6 +52,7 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #181C29;
+    margin-right: 20px;
 }
 
 .nav-list {
@@ -64,6 +66,8 @@ body {
 
 .nav-item {
     padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 .nav-item:nth-child(1),
@@ -85,6 +89,12 @@ body {
     text-transform: uppercase;
     color: #181C29;
     text-decoration: none;
+}
+
+.nav-item:hover,
+.nav-link:hover {
+    color: #FF4646;
+    background-color: rgba(255, 70, 70, 0.1);
 }
 
 .hero {
