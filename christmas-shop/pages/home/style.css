@@ -95,9 +95,11 @@ body {
     background-color: rgba(255, 70, 70, 0.1);
 }
 
-.nav-link:hover {
+.nav-item:hover .nav-link {
     color: #FF4646;
 }
+
+
 
 .hero {
     width: 1440px;
