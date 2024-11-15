@@ -353,3 +353,8 @@ body {
 .button-left:hover .arrow-left{
     stroke: #FF4646;
 }
+
+.best-gft-cards {
+    display: flex;
+    flex-direction: row;
+}
