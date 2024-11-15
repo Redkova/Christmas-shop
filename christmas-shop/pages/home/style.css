@@ -177,3 +177,69 @@ body {
 .hero-button-container:hover .hero-button-text {
     color: #181C29;
 }
+
+.about {
+    width: 1440px;
+    height: 648px;
+    background-color: #FF4646;
+    background-image:url("/christmas-shop/images/bg-snow.png");
+    background-size: cover, contain, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1276px;
+    height: 528px;
+    background-color: #FFFFFFFF;
+    border-radius: 20px;
+    margin-left: 82px;
+}
+
+.about-text-content {
+    display: flex;
+    flex-direction: column;
+    width: 426px;
+    margin-left: 60px;
+}
+
+.about-name-content {
+    font-family: "Allura";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #FF4646;
+    margin-top: 160px;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #181C29;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 148%;
+    color: #181C29;
+    margin-top: 0;
+    margin-bottom: 160px;
+}
+
+.about-image {
+    border-radius: 20px;
+}
