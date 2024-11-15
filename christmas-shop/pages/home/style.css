@@ -91,10 +91,12 @@ body {
     text-decoration: none;
 }
 
-.nav-item:hover,
+.nav-item:hover {
+    background-color: rgba(255, 70, 70, 0.1);
+}
+
 .nav-link:hover {
     color: #FF4646;
-    background-color: rgba(255, 70, 70, 0.1);
 }
 
 .hero {
