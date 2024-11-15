@@ -243,3 +243,65 @@ body {
 .about-image {
     border-radius: 20px;
 }
+
+.slider {
+    width: 1440px;
+    height: 488px;
+    background-color: #FF4646;
+    background-image:url("/christmas-shop/images/bg-snow.png");
+    background-size: cover, contain, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-slides {
+    width: 1993px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 82px;
+}
+
+.slider-text {
+    font-family: "Allura";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    color: #FFFFFFFF;
+    margin-top: 60px;
+    margin-bottom: 12px;
+}
+
+.slider-header {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #FFFFFFFF;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.slider-slides-text {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #FFFFFFFF;
+    margin-top: 51px;
+    margin-right: 20px;
+}
+
+.slider-slides-image {
+    border-radius: 20px;
+    margin-right: 20px;
+}
