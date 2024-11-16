@@ -354,7 +354,129 @@ body {
     stroke: #FF4646;
 }
 
+.best-gifts {
+    width: 1440px;
+    height: 554px;
+    background-color: #FF4646;
+    background-image:url("/christmas-shop/images/bg-snow.png");
+    background-size: cover, contain, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.best-gft-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-gft-text {
+    font-family: "Allura";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #FFFFFFFF;
+    margin-top: 60px;
+    margin-bottom: 12px;
+}
+
+.best-gft-title {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #FFFFFFFF;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 .best-gft-cards {
     display: flex;
     flex-direction: row;
+    margin-left: 82px;
+}
+
+.best-gft-card {
+    width: 310px;
+    height: 342px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECF3F8;
+    margin-right: 12px;
+}
+
+.best-gft-card:last-child {
+    margin-right: 0;
+}
+
+.best-gft-image {
+    width: 310px;
+    height: 230px;
+}
+
+.best-gft-card-txt {
+    height: 112px;
+    background-color: #FFFFFFFF;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.card-for-work {
+    color: #4361FF;
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.card-for-health {
+    color: #06A44F;
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.card-for-harmony {
+    color: #FF43F7;
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #181C29;
+    margin-top: 0px;
+    margin-bottom: 44px;
+}
+
+.best-gft-card:hover {
+    cursor: pointer;
+}
+
+.best-gft-card:hover .card-text {
+    color: #ff4646;
 }
