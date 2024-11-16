@@ -575,3 +575,11 @@ body {
     margin-top: 0;
     margin-bottom: 12px;
 }
+
+.separator {
+    width: 20px;
+    height: 0;
+    border: 1px solid #FFFFFF66;
+    transform: rotate(90deg);
+    margin-top: 30px;
+}
