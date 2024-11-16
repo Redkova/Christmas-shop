@@ -144,14 +144,14 @@ body {
     margin-bottom: 12px;
 }
 
-.hero-button {
+.button-explore {
     background-color: #181C29;
     padding: 20px 32px;
     border-radius: 20px;
     border: none;
 }
 
-.hero-button-text {
+.button-explore-txt {
     font-family: "Montserrat-SB";
     font-weight: 600;
     font-size: 12px;
@@ -170,11 +170,11 @@ body {
     color: #FFFFFFFF;
 }
 
-.hero-button-container:hover .hero-button {
+.button-container:hover .button-explore {
     background-color: #FFFFFFFF;
 }
 
-.hero-button-container:hover .hero-button-text {
+.button-container:hover .button-explore-txt {
     color: #181C29;
 }
 
@@ -479,4 +479,99 @@ body {
 
 .best-gft-card:hover .card-text {
     color: #ff4646;
+}
+
+.cta {
+    width: 1440px;
+    height: 668px;
+    background-color: #FF4646;
+    background-image:url("/christmas-shop/images/bg-snow.png"), url("/christmas-shop/images/bg-forest.png");
+    background-size: cover, contain, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-header {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFFFF;
+    width: 426px;
+    height: 108px;
+    margin-top: 180px;
+    margin-bottom: 20px;
+}
+
+.cta-timer {
+    display: flex;
+    flex-direction: row;
+}
+
+.cta-text {
+    font-family: "Allura";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #FFFFFFFF;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.cta-timer {
+    width: 344px;
+    height: 72px;
+    background-color: #FFFFFF66;
+    border-radius: 20px;
+}
+
+.cta-cell {
+    width: 80px;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-number {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35.48px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.cta-time {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
