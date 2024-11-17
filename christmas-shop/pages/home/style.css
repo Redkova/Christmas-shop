@@ -699,3 +699,15 @@ body {
     margin-top: 0;
     margin-bottom: 60px;
 }
+
+.footer-card:hover {
+    cursor: pointer;
+}
+
+.footer-card:hover .footer-card-text {
+    color: #FF4646;
+}
+
+.footer-card:hover .footer-card-header {
+    color: #FF4646;
+}
