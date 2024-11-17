@@ -204,6 +204,11 @@ body {
     text-decoration: none;
 }
 
+.gifts-tab:hover {
+    background-color: #FFFFFF33;
+    cursor: pointer;
+}
+
 .gifts-cards {
     display: flex;
     flex-direction: row;
@@ -292,3 +297,4 @@ body {
     margin-top: 0px;
     margin-bottom: 44px;
 }
+
