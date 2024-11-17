@@ -312,12 +312,15 @@ body {
     background-color: #ffffff;
 }
 
+.footer-content {
+    padding: 60px 82px;
+}
+
 .footer-cards {
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
-    margin-left: 82px;
-    margin-right: 82px;
+    margin-bottom: 60px;
+
 }
 
 .footer-card {
@@ -419,7 +422,7 @@ body {
     letter-spacing: 0.05em;
     color: #181C29;
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 0;
 }
 
 .footer-card:hover {
