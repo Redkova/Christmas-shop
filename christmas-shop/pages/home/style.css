@@ -182,6 +182,7 @@ body {
 
 .button-container:hover .button-explore {
     background-color: #FFFFFFFF;
+    cursor: pointer;
 }
 
 .button-container:hover .button-explore-txt {
