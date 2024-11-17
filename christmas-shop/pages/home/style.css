@@ -677,6 +677,7 @@ body {
 
 .socials-icons {
     margin: 8px;
+    stroke: #181C29;
 }
 
 .copyright {
@@ -710,4 +711,17 @@ body {
 
 .footer-card:hover .footer-card-header {
     color: #FF4646;
+}
+
+.socials:hover {
+    cursor: pointer;
+}
+
+.socials:hover .socials-icons {
+    stroke: #ff4646;
+}
+
+.made-in-rs:hover {
+    cursor: pointer;
+    color: #ff4646;
 }
