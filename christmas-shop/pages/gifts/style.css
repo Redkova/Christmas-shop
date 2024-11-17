@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Montserrat-SB";
+    src: url("/christmas-shop/assets/font/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/christmas-shop/assets/font/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Allura";
+    src: url("/christmas-shop/assets/font/Allura-Regular.woff") format("woff");
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 1440px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.header-logo {    
+    width: 141px;
+    height: 40px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 82px;
+    border-radius: 12px;
+
+}
+
+.header-logo-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-icon {
+    margin: 8px 8px 8px 20px;
+}
+
+.text-logo {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #181C29;
+    margin-right: 20px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 40px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.nav-item {
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.nav-item:nth-child(1),
+.nav-item:nth-child(2),
+.nav-item:nth-child(3) {
+    margin-right: 8px;
+}
+
+.nav-item:last-child {
+    margin-right: 82px;
+}
+
+.nav-link {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #181C29;
+    text-decoration: none;
+}
+
+.header-logo:hover {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 70, 70, 0.1);
+}
+
+.nav-item:hover .nav-link {
+    color: #FF4646;
+}
+
+
+
+.best-gft-cards {
+    display: flex;
+    flex-direction: row;
+    margin-left: 82px;
+}
+
+.best-gft-card {
+    width: 310px;
+    height: 342px;
+    border-radius: 20px;
+    background-color: #ECF3F8;
+    margin-right: 12px;
+}
+
+.best-card-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+
+.best-gft-image {
+    width: 310px;
+    height: 230px;
+}
+
+.best-gft-card-txt {
+    height: 112px;
+    background-color: #FFFFFFFF;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.card-for-work {
+    color: #4361FF;
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.card-for-health {
+    color: #06A44F;
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.card-for-harmony {
+    color: #FF43F7;
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #181C29;
+    margin-top: 0px;
+    margin-bottom: 44px;
+}
