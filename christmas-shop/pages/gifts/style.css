@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Montserrat-SB";
-    src: url("/christmas-shop/assets/font/Montserrat-SemiBold.woff") format("woff");
+    src: url("../../assets/font/Montserrat-SemiBold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("/christmas-shop/assets/font/Montserrat-Regular.woff") format("woff");
+    src: url("../../assets/font/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: "Allura";
-    src: url("/christmas-shop/assets/font/Allura-Regular.woff") format("woff");
+    src: url("../../assets/font/Allura-Regular.woff") format("woff");
 }
 
 body {
@@ -112,7 +112,7 @@ body {
     width: 1440px;
     height: 1394px;
     background-color: #FF4646;
-    background-image:url("/christmas-shop/images/bg-garland.png");
+    background-image:url("../../images/bg-garland.png");
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 20px;

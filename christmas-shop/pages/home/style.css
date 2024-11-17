@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Montserrat-SB";
-    src: url("/christmas-shop/assets/font/Montserrat-SemiBold.woff") format("woff");
+    src: url("../../assets/font/Montserrat-SemiBold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("/christmas-shop/assets/font/Montserrat-Regular.woff") format("woff");
+    src: url("../../assets/font/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: "Allura";
-    src: url("/christmas-shop/assets/font/Allura-Regular.woff") format("woff");
+    src: url("../../assets/font/Allura-Regular.woff") format("woff");
 }
 
 body {
@@ -112,7 +112,7 @@ body {
     width: 1440px;
     height: 524px;
     background-color: #FF4646;
-    background-image:url("./christmas-shop/images/bg-snow.png"), url("./christmas-shop/images/bg-ball.png");
+    background-image:url("../../images/bg-snow.png"), url("../../images/bg-ball.png");
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -192,7 +192,7 @@ body {
     width: 1440px;
     height: 648px;
     background-color: #FF4646;
-    background-image:url("/christmas-shop/images/bg-snow.png");
+    background-image:url("../../images/bg-snow.png");
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -258,7 +258,7 @@ body {
     width: 1440px;
     height: 488px;
     background-color: #FF4646;
-    background-image:url("/christmas-shop/images/bg-snow.png");
+    background-image:url("../../images/bg-snow.png");
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -368,7 +368,7 @@ body {
     width: 1440px;
     height: 554px;
     background-color: #FF4646;
-    background-image:url("/christmas-shop/images/bg-snow.png");
+    background-image:url("../../images/bg-snow.png");
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -499,7 +499,7 @@ body {
     width: 1440px;
     height: 668px;
     background-color: #FF4646;
-    background-image:url("/christmas-shop/images/bg-snow.png"), url("/christmas-shop/images/bg-forest.png");
+    background-image:url("../../images/bg-snow.png"), url("../../images/bg-forest.png");
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
