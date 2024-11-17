@@ -112,7 +112,7 @@ body {
     width: 1440px;
     height: 524px;
     background-color: #FF4646;
-    background-image:url("/christmas-shop/images/bg-snow.png"), url("/christmas-shop/images/bg-ball.png");
+    background-image:url("./christmas-shop/images/bg-snow.png"), url("./christmas-shop/images/bg-ball.png");
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
