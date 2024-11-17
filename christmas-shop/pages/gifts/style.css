@@ -298,3 +298,10 @@ body {
     margin-bottom: 44px;
 }
 
+.best-gft-card:hover {
+    cursor: pointer;
+}
+
+.best-gft-card:hover .card-text {
+    color: #ff4646;
+}
