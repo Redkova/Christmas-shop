@@ -584,3 +584,118 @@ body {
     transform: rotate(90deg);
     margin-top: 30px;
 }
+
+.footer {
+    width: 1440px;
+    height: 496px;
+    background-color: #ffffff;
+}
+
+.footer-cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: 82px;
+    margin-right: 82px;
+}
+
+.footer-card {
+    width: 417px;
+    height: 204px;
+    background-color: #ECF3F8;
+    border-radius: 20px;
+    margin-right: 12px;
+}
+
+.footer-card:last-child {
+    margin-right: 0;
+}
+
+.call-us-link,
+.meet-us-link,
+.write-us-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-card-img {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.footer-card-text {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36.48px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #181C29;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.footer-card-header {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24.32px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #181C29;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer-contacts {
+    width: 1276px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 82px;
+}
+
+.socials-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.socials {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.socials:last-child {
+    margin-right: 0;
+}
+
+.socials-icons {
+    margin: 8px;
+}
+
+.copyright {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.68px;
+    color: #181C29;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.made-in-rs {
+    font-family: "Allura";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #181C29;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
