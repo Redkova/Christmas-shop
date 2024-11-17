@@ -108,12 +108,108 @@ body {
     color: #FF4646;
 }
 
+.gifts {
+    width: 1440px;
+    height: 1394px;
+    background-color: #FF4646;
+    background-image:url("/christmas-shop/images/bg-garland.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
 
+.gifts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.best-gft-cards {
+.gifts-title-container {
+    width: 426px;
+    height: 144px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.gifts-title {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gifts-tabs {
+    width: 474px;
+    height: 40px;
     display: flex;
     flex-direction: row;
-    margin-left: 82px;
+    margin-bottom: 20px;
+}
+
+.gifts-tab:first-child {
+    width: 65px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #FFFFFF33;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gifts-tab:nth-child(2) {
+    width: 116px;
+    height: 40px;
+    border-radius: 12px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gifts-tab:nth-child(3) {
+    width: 126px;
+    height: 40px;
+    border-radius: 12px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.gifts-tab:last-child {
+    width: 143px;
+    height: 40px;
+    border-radius: 12px;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gifts-tab-link {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.gifts-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1276px;
+    height: 1050px;
 }
 
 .best-gft-card {
@@ -124,7 +220,13 @@ body {
     margin-right: 12px;
 }
 
-.best-card-link {
+.best-gft-card:nth-child(4),
+.best-gft-card:nth-child(8),
+.best-gft-card:nth-child(12) {
+    margin-right: 0;
+}
+
+.gifts-card-link {
     display: flex;
     flex-direction: column;
     text-decoration: none;
