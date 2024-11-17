@@ -28,16 +28,21 @@ body {
     background-color: #FFFFFF;
 }
 
-.header-logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.header-logo {    
+    width: 141px;
+    height: 40px;
     margin-top: 12px;
     margin-bottom: 12px;
     margin-left: 82px;
     border-radius: 12px;
-    height: 40px;
-    cursor: pointer;
+
+}
+
+.header-logo-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
 }
 
 .logo-icon {
@@ -49,7 +54,7 @@ body {
     font-weight: 600;
     font-size: 12px;
     line-height: 130%;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #181C29;
     margin-right: 20px;
@@ -89,6 +94,10 @@ body {
     text-transform: uppercase;
     color: #181C29;
     text-decoration: none;
+}
+
+.header-logo:hover {
+    cursor: pointer;
 }
 
 .nav-item:hover {
@@ -490,6 +499,7 @@ body {
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 0 0 20px 20px;
 }
 
 .cta-content {
