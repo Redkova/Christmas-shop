@@ -13,6 +13,10 @@
     src: url("../../assets/font/Allura-Regular.woff") format("woff");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     max-width: 1440px;
