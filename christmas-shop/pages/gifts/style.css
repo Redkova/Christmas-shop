@@ -68,6 +68,21 @@ body {
     margin-bottom: 12px;
 }
 
+.nav-gifts {
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #181C29;
+}
+
 .nav-item {
     padding: 12px 20px;
     display: flex;
@@ -75,23 +90,6 @@ body {
     align-items: center;
     border-radius: 12px;
     cursor: pointer;
-}
-
-.nav-item:first-child {
-    cursor: default;
-}
-
-.nav-item:nth-child(1),
-.nav-item:nth-child(2),
-.nav-item:nth-child(3) {
-    margin-right: 8px;
-}
-
-.nav-item:last-child {
-    margin-right: 82px;
-}
-
-.nav-link {
     font-family: "Montserrat-SB";
     font-weight: 600;
     font-size: 12px;
@@ -102,18 +100,23 @@ body {
     text-decoration: none;
 }
 
+.nav-gifts,
+.nav-about,
+.nav-best {
+    margin-right: 8px;
+}
+
+.nav-footer {
+    margin-right: 82px;
+}
+
+
 .header-logo:hover .text-logo {
     cursor: pointer;
 }
 
-.nav-item:nth-child(2):hover,
-.nav-item:nth-child(3):hover,
-.nav-item:nth-child(4):hover {
+.nav-item:hover {
     background-color: rgba(255, 70, 70, 0.1);
-}
-
-
-.nav-item:hover .nav-link {
     color: #FF4646;
 }
 
