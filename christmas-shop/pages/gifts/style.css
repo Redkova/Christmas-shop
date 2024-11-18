@@ -77,6 +77,10 @@ body {
     cursor: pointer;
 }
 
+.nav-item:first-child {
+    cursor: default;
+}
+
 .nav-item:nth-child(1),
 .nav-item:nth-child(2),
 .nav-item:nth-child(3) {
@@ -102,9 +106,12 @@ body {
     cursor: pointer;
 }
 
-.nav-item:hover {
+.nav-item:nth-child(2):hover,
+.nav-item:nth-child(3):hover,
+.nav-item:nth-child(4):hover {
     background-color: rgba(255, 70, 70, 0.1);
 }
+
 
 .nav-item:hover .nav-link {
     color: #FF4646;
