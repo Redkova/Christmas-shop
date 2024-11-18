@@ -123,7 +123,8 @@ body {
     flex-direction: column;
     align-items: center;
     width: 426px;
-    padding: 40px 507px;
+
+    padding: 60px 507px;
 }
 
 .hero-text {
@@ -198,7 +199,7 @@ body {
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
-    
+    position: relative;
 }
 
 .about-content {
@@ -210,6 +211,8 @@ body {
     background-color: #FFFFFFFF;
     border-radius: 20px;
     margin-left: 82px;
+    position: absolute;
+    top: 60px;
 }
 
 .about-text-content {
@@ -264,9 +267,16 @@ body {
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+    top: 60px;
 }
 
 .slider-text-content {
+    width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,7 +298,7 @@ body {
     line-height: 24px;
     letter-spacing: 0.04em;
     color: #FFFFFFFF;
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 12px;
 }
 
@@ -571,6 +581,52 @@ body {
     align-items: center;
 }
 
+.cta-cell:first-child {
+    margin-left: 12px;
+    position: relative;
+}
+
+.cta-cell:first-child::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -1px;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 20px;
+    background-color:  #FFFFFF66;
+}
+
+.cta-cell:nth-child(2) {
+    position: relative;
+}
+
+.cta-cell:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -1px;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 20px;
+    background-color:  #FFFFFF66;
+}
+
+.cta-cell:nth-child(3) {
+    position: relative;
+}
+
+.cta-cell:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -1px;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 20px;
+    background-color:  #FFFFFF66;
+}
+
 .cta-number {
     font-family: "Montserrat-SB";
     font-weight: 600;
@@ -602,7 +658,7 @@ body {
     height: 0;
     border: 1px solid #FFFFFF66;
     transform: rotate(90deg);
-    margin-top: 30px;
+    margin-top: 33px;
 }
 
 .footer {
@@ -752,3 +808,9 @@ body {
     color: #ff4646;
 }
 
+@media (min-width: 1440px) {
+    .body {
+        width: 100%;
+        padding: 0;
+    }
+}
