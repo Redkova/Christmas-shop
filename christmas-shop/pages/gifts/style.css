@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .header-logo {    
@@ -59,7 +59,7 @@ body {
     line-height: 15.6px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #181C29;
+    color: #181c29;
     margin-right: 20px;
 }
 
@@ -85,7 +85,7 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     background-color: rgba(255, 70, 70, 0.1);
-    color: #FF4646;
+    color: #ff4646;
 }
 
 .nav-item {
@@ -101,7 +101,7 @@ body {
     line-height: 15.6px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #181C29;
+    color: #181c29;
     text-decoration: none;
     transition: all 0.5s;
 }
@@ -123,13 +123,13 @@ body {
 
 .nav-item:hover {
     background-color: rgba(255, 70, 70, 0.1);
-    color: #FF4646;
+    color: #ff4646;
 }
 
 .gifts {
     width: 1440px;
     height: 1394px;
-    background-color: #FF4646;
+    background-color: #ff4646;
     background-image:url("../../images/bg-garland.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ body {
     width: 65px;
     height: 40px;
     border-radius: 12px;
-    background-color: #FFFFFF33;
+    background-color: #ffffff33;
     margin-right: 8px;
     display: flex;
     justify-content: center;
@@ -226,7 +226,7 @@ body {
 }
 
 .gifts-tab:hover {
-    background-color: #FFFFFF33;
+    background-color: #ffffff33;
     cursor: pointer;
 }
 
@@ -267,13 +267,13 @@ body {
 
 .best-gft-card-txt {
     height: 112px;
-    background-color: #FFFFFFFF;
+    background-color: #ffffffff;
     border-radius: 20px;
     padding-left: 20px;
 }
 
 .card-for-work {
-    color: #4361FF;
+    color: #4361ff;
     font-family: "Montserrat-SB";
     font-weight: 600;
     font-size: 12px;
@@ -285,7 +285,7 @@ body {
 }
 
 .card-for-health {
-    color: #06A44F;
+    color: #06a44f;
     font-family: "Montserrat-SB";
     font-weight: 600;
     font-size: 12px;
@@ -456,11 +456,11 @@ body {
 }
 
 .footer-card:hover .footer-card-text {
-    color: #FF4646;
+    color: #ff4646;
 }
 
 .footer-card:hover .footer-card-header {
-    color: #FF4646;
+    color: #ff4646;
 }
 
 .socials:hover {
