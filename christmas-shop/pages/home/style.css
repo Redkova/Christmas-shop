@@ -278,11 +278,12 @@ body {
 }
 
 .slider-slides {
-    width: 1993px;
+    width: 1276px;
     height: 200px;
     display: flex;
     flex-direction: row;
     margin-left: 82px;
+    overflow: hidden;
 }
 
 .slider-text {
