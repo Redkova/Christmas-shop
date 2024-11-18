@@ -160,6 +160,7 @@ body {
 }
 
 .button-explore {
+    text-decoration: none;
     width: 235px;
     height: 56px;
     background-color: #181C29;
@@ -168,9 +169,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.button-explore-txt {
     font-family: "Montserrat-SB";
     font-weight: 600;
     font-size: 12px;
@@ -178,7 +176,7 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-align: center;
-    text-decoration: none;
+    
     color: #FFFFFFFF;  
 }
 
@@ -190,11 +188,12 @@ body {
 
 .button-explore:hover {
     background-color: #FFFFFFFF;
+    color: #181C29;
     cursor: pointer;
 }
 
 .button-explore:hover .button-explore-txt {
-    color: #181C29;
+    
 }
 
 .about {
