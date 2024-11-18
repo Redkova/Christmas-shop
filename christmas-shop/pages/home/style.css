@@ -87,6 +87,7 @@ body {
     text-transform: uppercase;
     color: #181C29;
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 .nav-gifts,
@@ -173,8 +174,8 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-align: center;
-    
     color: #FFFFFFFF;  
+    transition: all 0.7s;
 }
 
 .hero-text:last-child {
@@ -187,10 +188,6 @@ body {
     background-color: #FFFFFFFF;
     color: #181C29;
     cursor: pointer;
-}
-
-.button-explore:hover .button-explore-txt {
-    
 }
 
 .about {
@@ -344,6 +341,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.7s;
 }
 
 .arrow-right,
@@ -351,6 +349,7 @@ body {
     width: 14px;
     height: 14px;
     stroke: #FFFFFF;
+    transition: all 0.7s;
 }
 
 .button-left {
@@ -491,6 +490,7 @@ body {
     color: #181C29;
     margin-top: 0px;
     margin-bottom: 44px;
+    transition: all 0.5s;
 }
 
 .best-gft-card:hover {
@@ -657,6 +657,7 @@ body {
     color: #181C29;
     margin-top: 0;
     margin-bottom: 12px;
+    transition: all 0.5s;
 }
 
 .footer-card-header {
@@ -669,6 +670,7 @@ body {
     color: #181C29;
     margin-top: 0;
     margin-bottom: 20px;
+    transition: all 0.5s;
 }
 
 .footer-contacts {
@@ -699,6 +701,7 @@ body {
 .socials-icons {
     margin: 8px;
     stroke: #181C29;
+    transition: all 0.5s;
 }
 
 .copyright {
@@ -721,6 +724,7 @@ body {
     text-decoration: none;
     margin-top: 0;
     margin-bottom: 0;
+    transition: all 0.5s;
 }
 
 .footer-card:hover {
