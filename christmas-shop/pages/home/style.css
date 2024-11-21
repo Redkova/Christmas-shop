@@ -15,20 +15,22 @@
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
+
+
 body {
-    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
+
 
 .header {
     width: 1440px;
     height: 64px;
     display: flex;
     flex-direction: row;
-
     background-color: #ffffff;
 }
 
@@ -123,7 +125,6 @@ body {
     width: 40px;
     height: 40px;
     position: relative;
-    background-color: #4361FF;
 }
 
 .burger-line {
@@ -146,7 +147,7 @@ body {
 
 
 .hero {
-    width: 1440px;
+    max-width: 1440px;
     height: 524px;
     background-color: #ff4646;
     background-image:url("../../images/bg-snow.png");
@@ -239,7 +240,7 @@ body {
 }
 
 .about {
-    width: 1440px;
+    max-width: 1440px;
     height: 648px;
     background-color: #FF4646;
     background-image:url("../../images/bg-snow.png");
@@ -253,7 +254,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1276px;
+    flex-wrap: wrap;
+    max-width: 1276px;
     height: 528px;
     background-color: #ffffffff;
     border-radius: 20px;
@@ -307,7 +309,7 @@ body {
 }
 
 .slider {
-    width: 1440px;
+    max-width: 1440px;
     height: 488px;
     background-color: #ff4646;
     background-image:url("../../images/bg-snow.png");
@@ -427,7 +429,7 @@ body {
 }
 
 .best-gifts {
-    width: 1440px;
+    max-width: 1440px;
     height: 554px;
     background-color: #FF4646;
     background-image:url("../../images/bg-snow.png");
@@ -468,6 +470,7 @@ body {
 .best-gft-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-left: 82px;
 }
 
@@ -559,7 +562,7 @@ body {
 }
 
 .cta {
-    width: 1440px;
+    max-width: 1440px;
     height: 668px;
     background-color: #FF4646;
     background-image:url("../../images/bg-snow.png"), url("../../images/bg-forest.png");
@@ -701,8 +704,7 @@ body {
 }
 
 .footer {
-    width: 1440px;
-    height: 496px;
+    margin: 0 auto;
     background-color: #ffffff;
 }
 
@@ -713,6 +715,7 @@ body {
 .footer-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 60px;
 }
 
@@ -769,8 +772,7 @@ body {
 }
 
 .footer-contacts {
-    width: 1276px;
-    height: 112px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -845,4 +847,30 @@ body {
 .made-in-rs:hover {
     cursor: pointer;
     color: #ff4646;
+}
+
+@media screen and (max-width: 768px) {
+    .header-burger {
+        display: block;
+        margin-top: 12px;
+        margin-right: 8px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        margin-left: 8px;
+    }
+
+    .header-nav {
+      display: none;
+    }
+
+    .hero {
+        
+    }
 }
