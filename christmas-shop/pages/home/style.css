@@ -301,34 +301,26 @@ body {
 
 .slider {
     max-width: 1440px;
-    height: 488px;
+    padding-block: 60px;
     background-color: #ff4646;
     background-image:url("../../images/bg-snow.png");
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-}
-
-.slider-content {
-    position: absolute;
-    top: 60px;
 }
 
 .slider-text-content {
-    width: 1440px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .slider-slides {
-    width: 1276px;
-    height: 200px;
     display: flex;
     flex-direction: row;
     margin-left: 82px;
-    overflow: hidden;
+    
 }
 
 .slider-text {
@@ -362,11 +354,13 @@ body {
     color: #ffffffff;
     margin-top: 51px;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 
 .slider-slides-image {
     border-radius: 20px;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 
 .slider-buttons {
