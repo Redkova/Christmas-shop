@@ -694,12 +694,12 @@ body {
 }
 
 .footer {
-    margin: 0 auto;
+    padding: 60px 82px;
     background-color: #ffffff;
 }
 
 .footer-content {
-    padding: 60px 82px;
+
 }
 
 .footer-cards {
@@ -707,19 +707,17 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 60px;
+    gap: 12px;
 }
 
 .footer-card {
+    padding: 20px;
     width: 417px;
     height: 204px;
     background-color: #ECF3F8;
     border-radius: 20px;
-    margin-right: 12px;
 }
 
-.footer-card:last-child {
-    margin-right: 0;
-}
 
 .call-us-link,
 .meet-us-link,
@@ -731,7 +729,7 @@ body {
 }
 
 .footer-card-img {
-    margin-top: 20px;
+
     margin-bottom: 12px;
 }
 
@@ -757,7 +755,6 @@ body {
     text-transform: uppercase;
     color: #181C29;
     margin-top: 0;
-    margin-bottom: 20px;
     transition: all 0.5s;
 }
 
@@ -881,4 +878,6 @@ body {
     .best-gifts {
         padding: 60px 68px;
     }
+
+
 }
