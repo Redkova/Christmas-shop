@@ -239,12 +239,12 @@ body {
 }
 
 .about-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
     max-width: 1276px;
-    height: 528px;
+
     background-color: #ffffffff;
     border-radius: 20px;
 
@@ -296,7 +296,7 @@ body {
 .about-image {
     border-radius: 20px;
     display: block;
-    max-width: 100%;
+
 }
 
 .slider {
