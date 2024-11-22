@@ -18,17 +18,20 @@ html {
     box-sizing: border-box;
 }
 
-
+*, ::before, ::after {
+    box-sizing: border-box;
+}
 
 body {
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .header {
-    width: 1440px;
-    height: 64px;
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
     background-color: #ffffff;
@@ -147,32 +150,23 @@ body {
 
 
 .hero {
-    max-width: 1440px;
-    height: 524px;
+    padding-block: 60px;
     background-color: #ff4646;
-    background-image:url("../../images/bg-snow.png");
-    background-size: cover, contain, auto;
-    background-repeat: no-repeat;
+    background-image:url("../../images/bg-snow.png"), url("../../images/bg-ball.png");
+    background-size: cover;
     background-position: center;
-    border-radius: 20px 20px 0 0;
-    position: relative;
-}
+    background-repeat: repeat, no-repeat;
 
-.hero-bg-ball {
-    width: 1440px;
-    height: 524px;
-    object-fit: cover;
-    position: absolute;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-content {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 426px;
-    padding: 60px 507px;
-    z-index: 10;
+    max-width: 426px;
 }
 
 .hero-text {
