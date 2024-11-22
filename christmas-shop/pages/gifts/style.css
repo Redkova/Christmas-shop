@@ -211,6 +211,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: default;
 }
 
 .gifts-tab {
@@ -221,6 +222,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .gifts-tab:last-child {
@@ -240,7 +242,6 @@ body {
 
 .gifts-tab:hover {
     background-color: #ffffff33;
-    cursor: pointer;
 }
 
 .gifts-cards {
@@ -257,14 +258,11 @@ body {
     background-color: #ECF3F8;
 }
 
-
-
 .gifts-card-link {
     display: flex;
     flex-direction: column;
     text-decoration: none;
 }
-
 
 .best-gft-image {
     width: 310px;
