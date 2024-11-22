@@ -307,6 +307,7 @@ body {
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 .slider-text-content {
