@@ -15,20 +15,24 @@
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
 }
 
 body {
-    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    width: 1440px;
-    height: 64px;
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: #ffffff;
 }
 
@@ -59,8 +63,16 @@ body {
     line-height: 15.6px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #181c29;
+    color: #181C29;
     margin-right: 20px;
+    width: 69px;
+}
+
+.header-nav {
+    width: 1123px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 12px;
 }
 
 .nav-list {
@@ -70,6 +82,7 @@ body {
     height: 40px;
     margin-top: 12px;
     margin-bottom: 12px;
+    padding-left: 0;
 }
 
 .nav-gifts {
@@ -101,7 +114,7 @@ body {
     line-height: 15.6px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #181c29;
+    color: #181C29;
     text-decoration: none;
     transition: all 0.5s;
 }
@@ -113,9 +126,8 @@ body {
 }
 
 .nav-footer {
-    margin-right: 82px;
+    margin-right: 0;
 }
-
 
 .header-logo:hover .text-logo {
     cursor: pointer;
