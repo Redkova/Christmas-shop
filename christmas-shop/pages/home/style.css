@@ -299,12 +299,13 @@ body {
 
 .slider {
     max-width: 1440px;
-    padding-block: 60px;
+    padding: 60px 82px;
     background-color: #ff4646;
     background-image:url("../../images/bg-snow.png");
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 .slider-text-content {
@@ -317,8 +318,7 @@ body {
 .slider-slides {
     display: flex;
     flex-direction: row;
-    margin-left: 82px;
-    overflow: hidden;
+
 }
 
 .slider-text {
@@ -368,7 +368,6 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 20px;
-    margin-left: 82px;
 }
 
 .button-left {
@@ -401,7 +400,6 @@ body {
     width: 14px;
     height: 14px;
     stroke: #ffffff66;
-
 }
 
 .arrow-right {
@@ -425,8 +423,8 @@ body {
 
 
 .best-gifts {
+    padding: 60px 82px;
     max-width: 1440px;
-    height: 554px;
     background-color: #FF4646;
     background-image:url("../../images/bg-snow.png");
     background-size: cover, contain, auto;
@@ -447,7 +445,7 @@ body {
     line-height: 24px;
     letter-spacing: 0.05em;
     color: #ffffffff;
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 12px;
 }
 
@@ -467,7 +465,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 82px;
+    gap: 12px;
 }
 
 .best-gft-card {
@@ -475,7 +473,6 @@ body {
     height: 342px;
     border-radius: 20px;
     background-color: #ECF3F8;
-    margin-right: 12px;
 }
 
 .best-gft-card-link {
@@ -878,5 +875,13 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .slider {
+        padding: 60px 8px;
+    }
+
+    .best-gifts {
+        padding: 60px 68px;
     }
 }
