@@ -155,9 +155,13 @@ body {
     background-image:url("../../images/bg-snow.png"), url("../../images/bg-ball.png");
     background-size: cover;
     background-position: center;
-    background-repeat: repeat, no-repeat;
-
+    background-repeat: no-repeat;
     border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
     display: flex;
     justify-content: center;
 }
@@ -167,6 +171,8 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 426px;
+    row-gap: 12px;
+    padding: 60px 0;
 }
 
 .hero-text {
@@ -176,11 +182,8 @@ body {
     line-height: 24px;
     letter-spacing: 0.05em;
     color: #ffffff;
-}
-
-.hero-text:first-child {
-    margin-top: 60px;
-    margin-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .hero-title {
@@ -192,13 +195,11 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
+    max-width: 426px;
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 0;
 }
 
-.button-container {
-    margin-top: 12px;
-}
 
 .button-explore {
     text-decoration: none;
@@ -221,11 +222,7 @@ body {
     transition: all 0.7s;
 }
 
-.hero-text:last-child {
-    margin-top: 12px;
-    text-align: center;
-    color: #ffffffff;
-}
+
 
 .button-explore:hover {
     background-color: #ffffffff;
@@ -235,13 +232,13 @@ body {
 
 .about {
     max-width: 1440px;
-    height: 648px;
+
     background-color: #FF4646;
     background-image:url("../../images/bg-snow.png");
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+    padding: 60px 82px;
 }
 
 .about-content {
@@ -253,16 +250,14 @@ body {
     height: 528px;
     background-color: #ffffffff;
     border-radius: 20px;
-    margin-left: 82px;
-    position: absolute;
-    top: 60px;
+
 }
 
 .about-text-content {
     display: flex;
     flex-direction: column;
-    width: 426px;
-    margin-left: 60px;
+    max-width: 426px;
+    padding: 100px 60px;
 }
 
 .about-name-content {
@@ -295,11 +290,12 @@ body {
     line-height: 23.68px;
     color: #181C29;
     margin-top: 0;
-    margin-bottom: 160px;
 }
 
 .about-image {
     border-radius: 20px;
+    display: block;
+    max-width: 100%;
 }
 
 .slider {
