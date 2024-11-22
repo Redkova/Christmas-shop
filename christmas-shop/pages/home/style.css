@@ -307,7 +307,6 @@ body {
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
-    overflow: hidden;
 }
 
 .slider-text-content {
@@ -321,6 +320,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: 82px;
+    
 }
 
 .slider-text {
@@ -373,35 +373,51 @@ body {
     margin-left: 82px;
 }
 
-.button-right,
 .button-left {
+    border: 1px solid #ffffff66;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 56px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-right {
     border: 1px solid #ffffff;
     background-color: transparent;
     border-radius: 20px;
     width: 56px;
     height: 56px;
     position: relative;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     transition: all 0.7s;
 }
 
-.arrow-right,
 .arrow-left {
+    width: 14px;
+    height: 14px;
+    stroke: #ffffff66;
+
+}
+
+.arrow-right {
     width: 14px;
     height: 14px;
     stroke: #ffffff;
     transition: all 0.7s;
 }
 
-.button-left {
+.button-right {
     margin-left: 20px;
 }
 
-.button-right:hover,
-.button-left:hover {
+.button-right:hover {
     background-color: #ffffff;
 }
 
@@ -409,9 +425,6 @@ body {
     stroke: #FF4646;
 }
 
-.button-left:hover .arrow-left{
-    stroke: #FF4646;
-}
 
 .best-gifts {
     max-width: 1440px;
