@@ -827,6 +827,12 @@ body {
     color: #ff4646;
 }
 
+@media screen and (max-width: 796px){
+    .best-gifts {
+        padding: 60px 68px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .header-burger {
         display: block;
