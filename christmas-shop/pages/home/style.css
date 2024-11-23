@@ -133,7 +133,7 @@ body {
 .burger-line {
     display: block;
     width: 20px;
-    height: 2px;
+    height: 1px;
     background-color: #181c29;
     position: absolute;
 }
