@@ -253,7 +253,6 @@ body {
 
 .best-gft-card {
     max-width: 310px;
-    height: 342px;
     border-radius: 20px;
     background-color: #ECF3F8;
 }
@@ -265,8 +264,7 @@ body {
 }
 
 .best-gft-image {
-    width: 310px;
-    height: 230px;
+    max-width: 310px;
 }
 
 .best-gft-card-txt {
@@ -499,6 +497,10 @@ body {
 
     .header-nav {
       display: none;
+    }
+
+    .gifts {
+        padding: 60px 68px;
     }
 }
 
