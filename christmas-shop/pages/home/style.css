@@ -831,10 +831,19 @@ body {
     .about {
         padding: 60px 30px;
     }
-    
+
     .about-text-content {
         padding: 66px 60px;
     }
+
+    .slider {
+        padding: 60px 30px;
+    }
+
+    .footer {
+        padding: 60px 30px;
+    }
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -845,6 +854,11 @@ body {
     .about-text-content {
         padding: 56px 60px;
     }
+
+    .slider {
+        padding: 60px 15px;
+    }
+
 }
 
 @media screen and (max-width: 796px){
