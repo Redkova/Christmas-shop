@@ -364,8 +364,6 @@ body {
 }
 
 .slider-buttons {
-    width: 1276px;
-    height: 56px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
