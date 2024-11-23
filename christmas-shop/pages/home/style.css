@@ -828,6 +828,10 @@ body {
 }    
 
 @media screen and (max-width: 1150px) {
+    .header-logo {
+        margin-left: 30px;
+    }
+
     .about {
         padding: 60px 30px;
     }
@@ -847,6 +851,10 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+    .header-logo {
+        margin-left: 15px;
+    }
+
     .about {
         padding: 60px 15px;
     }
