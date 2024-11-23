@@ -243,7 +243,6 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     max-width: 1276px;
-
     background-color: #ffffffff;
     border-radius: 20px;
 }
@@ -252,6 +251,16 @@ body {
     display: flex;
     flex-direction: column;
     padding: 100px 60px;
+}
+
+.about-image-container{
+    background-image: url("../../images/santa.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 528px;
+    border-radius: 20px;
 }
 
 .about-text-container {
@@ -288,13 +297,6 @@ body {
     color: #181C29;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.about-image {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .slider {
@@ -827,7 +829,7 @@ body {
     color: #ff4646;
 }    
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1225px) {
     .header-logo {
         margin-left: 30px;
     }
@@ -837,7 +839,7 @@ body {
     }
 
     .about-text-content {
-        padding: 66px 60px;
+        padding: 50px 60px;
     }
 
     .slider {
@@ -860,7 +862,7 @@ body {
     }
 
     .about-text-content {
-        padding: 56px 60px;
+        padding: 46px 60px;
     }
 
     .slider {
@@ -904,12 +906,6 @@ body {
         padding: 46px 60px;
     }
 
-    .about-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
     .slider {
         padding: 60px 8px;
     }
@@ -923,6 +919,13 @@ body {
     }
 }
 
-@media screen and (max-width: 380px) {
-    
+@media screen and (max-width: 690px) {
+    .about-content {
+        grid-template-columns: repeat(auto-fit, minmax(364px, 1fr))
+    }
+
+    .about-text-content {
+        padding: 0 20px;
+    }
+
 }
