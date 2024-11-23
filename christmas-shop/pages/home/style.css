@@ -931,4 +931,9 @@ body {
     .best-gft-cards {
         padding: 0 27px;
     }
+
+    .footer-card {
+        max-width: 364px;
+    }
+
 }
