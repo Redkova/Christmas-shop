@@ -495,5 +495,9 @@ body {
     .gifts {
         padding: 60px 68px;
     }
+
+    .footer {
+        padding: 60px 8px;
+    }
 }
 
