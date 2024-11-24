@@ -697,7 +697,7 @@ body {
 .footer-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(417px, 1fr));
-    align-items: center;
+
     gap: 12px;
     margin-bottom: 60px;
 }
@@ -923,11 +923,11 @@ body {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 478px) {
     .best-gifts {
         padding: 60px 8px;
     }
-    
+
     .best-gft-cards {
         padding: 0 27px;
     }
@@ -935,5 +935,4 @@ body {
     .footer-card {
         max-width: 364px;
     }
-
 }
