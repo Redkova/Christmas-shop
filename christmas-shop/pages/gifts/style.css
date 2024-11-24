@@ -204,10 +204,8 @@ body {
 }
 
 .gifts-tab:first-child {
-    padding: 12px 20px;
     border-radius: 12px;
     background-color: #ffffff33;
-    margin-right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -504,5 +502,14 @@ body {
 @media screen and (max-width: 380px) {
     .gifts {
         padding: 60px 8px;
+    }
+
+    .gifts-tab {
+        padding: 12px 8px;
+        margin-right: 0;
+    }
+
+    .gifts-cards {
+        padding: 0 27px;
     }
 }
