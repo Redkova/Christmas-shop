@@ -499,6 +499,12 @@ body {
     }
 }
 
+@media screen and (max-width: 420px) {
+    .footer-card {
+        max-width: 364px;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .gifts {
         padding: 60px 8px;
@@ -513,3 +519,4 @@ body {
         padding: 0 27px;
     }
 }
+
