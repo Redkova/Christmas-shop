@@ -172,6 +172,19 @@ body {
     border-radius: 20px;
 }
 
+.gft-button-upp {
+    display: none;
+    border: 1px solid #ff4646;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+}
+
 .gifts-content {
     display: flex;
     flex-direction: column;
@@ -492,6 +505,10 @@ body {
 
     .gifts {
         padding: 60px 68px;
+    }
+
+    .gft-button-upp {
+        display: block;
     }
 
     .footer {
