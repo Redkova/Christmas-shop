@@ -199,7 +199,6 @@ body {
     margin-bottom: 0;
 }
 
-
 .button-explore {
     text-decoration: none;
     width: 235px;
@@ -319,7 +318,6 @@ body {
 .slider-slides {
     display: flex;
     flex-direction: row;
-
 }
 
 .slider-text {

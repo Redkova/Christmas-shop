@@ -172,7 +172,7 @@ body {
     border-radius: 20px;
 }
 
-.gft-button-upp {
+.gft-button-up {
     display: none;
     border: 1px solid #ff4646;
     background-color: #ffffff;
@@ -183,6 +183,7 @@ body {
     position: fixed;
     right: 8px;
     bottom: 8px;
+    z-index: 10;
 }
 
 .gifts-content {
@@ -476,6 +477,18 @@ body {
     color: #ff4646;
 }
 
+@media screen and (max-width: 1225px) {
+    .header-logo {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-logo {
+        margin-left: 15px;
+    }
+}
+
 @media screen and (max-width: 796px){
     .gifts {
         padding: 60px 68px;
@@ -516,13 +529,7 @@ body {
     }
 }
 
-@media screen and (max-width: 420px) {
-    .footer-card {
-        max-width: 364px;
-    }
-}
-
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 610px) {
     .gifts {
         padding: 60px 8px;
     }
@@ -531,7 +538,15 @@ body {
         padding: 12px 8px;
         margin-right: 0;
     }
+}
 
+@media screen and (max-width: 420px) {
+    .footer-card {
+        max-width: 364px;
+    }
+}
+
+@media screen and (max-width: 380px) {
     .gifts-cards {
         padding: 0 27px;
     }
