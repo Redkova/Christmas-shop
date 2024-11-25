@@ -497,7 +497,6 @@ body {
     .footer-cards {
         grid-template-columns: 1fr;
     }
-
 }
 
 @media screen and (max-width: 1117px) {
@@ -582,3 +581,50 @@ body {
     }
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .header-logo:hover .text-logo {
+        cursor: default;
+    }
+
+    .nav-item:hover {
+        background-color: #ffffff;
+        color: #181C29;
+    }
+
+    .gifts-tab:hover {
+        background-color: #ff4646;
+    }
+
+    .best-gft-card:hover {
+        cursor: default;
+    }
+    
+    .best-gft-card:hover .card-text {
+        color: #181C29;
+    }
+
+    .footer-card:hover {
+        cursor: default;
+    }
+    
+    .footer-card:hover .footer-card-text {
+        color: #181C29;
+    }
+    
+    .footer-card:hover .footer-card-header {
+        color: #181C29;
+    }
+    
+    .socials:hover {
+        cursor: default;
+    }
+    
+    .socials:hover .socials-icons {
+        stroke: #181C29;
+    }
+    
+    .made-in-rs:hover {
+        cursor: default;
+        color: #181C29;
+    }
+}

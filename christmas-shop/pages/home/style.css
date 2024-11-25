@@ -1009,7 +1009,7 @@ body {
     }
     
     .made-in-rs:hover {
-        cursor: pointer;
-        color: #ff4646;
+        cursor: default;
+        color: #181C29;
     }    
 }
