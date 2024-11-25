@@ -955,3 +955,61 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));
     }
 }
+
+@media (hover: none) and (pointer: coarse) {
+    .header-logo:hover .text-logo {
+        cursor: default;
+    }
+
+    .nav-item:hover {
+        background-color: #ffffff;
+        color: #181C29;
+    }
+
+    .button-explore:hover {
+        background-color: #181C29;
+        color: #ffffffff;  
+        cursor: default;
+    }
+
+    .button-right:hover {
+        background-color: transparent;
+    }
+
+    .button-right:hover .arrow-right {
+        stroke: #ffffff;
+    }
+
+    .best-gft-card:hover {
+        cursor: default;
+    }
+    
+    .best-gft-card:hover .card-text {
+        color: #181C29;
+    }
+
+    .footer-card:hover {
+        cursor: default;
+    }
+    
+    .footer-card:hover .footer-card-text {
+        color: #181C29;
+    }
+    
+    .footer-card:hover .footer-card-header {
+        color: #181C29;
+    }
+    
+    .socials:hover {
+        cursor: default;
+    }
+    
+    .socials:hover .socials-icons {
+        stroke: #181C29;
+    }
+    
+    .made-in-rs:hover {
+        cursor: pointer;
+        color: #ff4646;
+    }    
+}
