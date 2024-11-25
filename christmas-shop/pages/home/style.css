@@ -456,7 +456,8 @@ body {
 
 .best-gft-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     gap: 12px;
 }
 
@@ -813,6 +814,13 @@ body {
     cursor: pointer;
     color: #ff4646;
 }    
+
+@media screen and (max-width: 1310px) {
+    .best-gft-cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
 
 @media screen and (max-width: 1225px) {
     .header-logo {
