@@ -29,7 +29,6 @@ body {
     flex-direction: column;
 }
 
-
 .header {
     max-width: 1440px;
     display: flex;
@@ -75,7 +74,6 @@ body {
     justify-content: flex-end;
     margin-left: 12px;
 }
-
 
 .nav-list {
     display: flex;
@@ -418,7 +416,6 @@ body {
     stroke: #FF4646;
 }
 
-
 .best-gifts {
     padding: 60px 82px;
     max-width: 1440px;
@@ -694,6 +691,7 @@ body {
 .footer-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(417px, 1fr));
+    align-items: center;
     gap: 12px;
     margin-bottom: 60px;
 }
