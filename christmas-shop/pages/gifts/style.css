@@ -487,6 +487,11 @@ body {
     .header-logo {
         margin-left: 15px;
     }
+
+    .gft-button-up {
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 796px){
@@ -516,12 +521,10 @@ body {
       display: none;
     }
 
+
+
     .gifts {
         padding: 60px 68px;
-    }
-
-    .gft-button-upp {
-        display: block;
     }
 
     .footer {
