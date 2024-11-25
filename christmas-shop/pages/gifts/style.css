@@ -15,20 +15,24 @@
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
 }
 
 body {
-    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    width: 1440px;
-    height: 64px;
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: #ffffff;
 }
 
@@ -59,8 +63,16 @@ body {
     line-height: 15.6px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #181c29;
+    color: #181C29;
     margin-right: 20px;
+    width: 69px;
+}
+
+.header-nav {
+    width: 1123px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 12px;
 }
 
 .nav-list {
@@ -70,6 +82,7 @@ body {
     height: 40px;
     margin-top: 12px;
     margin-bottom: 12px;
+    padding-left: 0;
 }
 
 .nav-gifts {
@@ -101,7 +114,7 @@ body {
     line-height: 15.6px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #181c29;
+    color: #181C29;
     text-decoration: none;
     transition: all 0.5s;
 }
@@ -113,9 +126,8 @@ body {
 }
 
 .nav-footer {
-    margin-right: 82px;
+    margin-right: 0;
 }
-
 
 .header-logo:hover .text-logo {
     cursor: pointer;
@@ -126,14 +138,52 @@ body {
     color: #ff4646;
 }
 
+.header-burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.burger-line {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #181c29;
+    position: absolute;
+}
+
+.burger-line:first-child {
+    top: 16px;
+    left: 10px
+}
+
+.burger-line:last-child {
+    bottom: 16px;
+    left: 10px;
+}
+
 .gifts {
-    width: 1440px;
-    height: 1394px;
+    padding: 60px 82px;
     background-color: #ff4646;
     background-image:url("../../images/bg-garland.png");
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 20px;
+}
+
+.gft-button-up {
+    display: none;
+    border: 1px solid #ff4646;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    z-index: 10;
 }
 
 .gifts-content {
@@ -143,9 +193,8 @@ body {
 }
 
 .gifts-title-container {
-    width: 426px;
-    height: 144px;
-    margin-top: 60px;
+    max-width: 426px;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -163,55 +212,33 @@ body {
 }
 
 .gifts-tabs {
-    width: 474px;
-    height: 40px;
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
 }
 
 .gifts-tab:first-child {
-    width: 65px;
-    height: 40px;
     border-radius: 12px;
     background-color: #ffffff33;
-    margin-right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: default;
 }
 
-.gifts-tab:nth-child(2) {
-    width: 116px;
-    height: 40px;
+.gifts-tab {
+    padding: 12px 20px;
     border-radius: 12px;
     margin-right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
+    cursor: pointer;
 }
-
-.gifts-tab:nth-child(3) {
-    width: 126px;
-    height: 40px;
-    border-radius: 12px;
-    margin-right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-}   
 
 .gifts-tab:last-child {
-    width: 143px;
-    height: 40px;
-    border-radius: 12px;
     margin-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
 }
 
 .gifts-tab-link {
@@ -227,30 +254,19 @@ body {
 
 .gifts-tab:hover {
     background-color: #ffffff33;
-    cursor: pointer;
 }
 
 .gifts-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1276px;
-    height: 1050px;
+    gap: 12px;
 }
 
 .best-gft-card {
-    width: 310px;
-    height: 342px;
+    max-width: 310px;
     border-radius: 20px;
     background-color: #ECF3F8;
-    margin-right: 12px;
-    margin-bottom: 12px;
-}
-
-.best-gft-card:nth-child(4),
-.best-gft-card:nth-child(8),
-.best-gft-card:nth-child(12) {
-    margin-right: 0;
 }
 
 .gifts-card-link {
@@ -259,10 +275,8 @@ body {
     text-decoration: none;
 }
 
-
 .best-gft-image {
-    width: 310px;
-    height: 230px;
+    max-width: 310px;
 }
 
 .best-gft-card-txt {
@@ -330,31 +344,22 @@ body {
 }
 
 .footer {
-    width: 1440px;
-    height: 496px;
+    padding: 60px 82px;
     background-color: #ffffff;
 }
 
-.footer-content {
-    padding: 60px 82px;
-}
-
 .footer-cards {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(417px, 1fr));
+    align-items: center;
+    gap: 12px;
     margin-bottom: 60px;
 }
 
 .footer-card {
-    width: 417px;
-    height: 204px;
+    padding: 20px;
     background-color: #ECF3F8;
     border-radius: 20px;
-    margin-right: 12px;
-}
-
-.footer-card:last-child {
-    margin-right: 0;
 }
 
 .call-us-link,
@@ -367,7 +372,6 @@ body {
 }
 
 .footer-card-img {
-    margin-top: 20px;
     margin-bottom: 12px;
 }
 
@@ -393,17 +397,14 @@ body {
     text-transform: uppercase;
     color: #181C29;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     transition: all 0.5s;
 }
 
 .footer-contacts {
-    width: 1276px;
-    height: 112px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
 }
 
 .socials-list {
@@ -475,3 +476,81 @@ body {
     cursor: pointer;
     color: #ff4646;
 }
+
+@media screen and (max-width: 1225px) {
+    .header-logo {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-logo {
+        margin-left: 15px;
+    }
+
+    .gft-button-up {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 796px){
+    .gifts {
+        padding: 60px 68px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-burger {
+        display: block;
+        margin-top: 12px;
+        margin-right: 8px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        margin-left: 8px;
+    }
+
+    .header-nav {
+      display: none;
+    }
+    
+    .gifts {
+        padding: 60px 68px;
+    }
+
+    .footer {
+        padding: 60px 8px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .gifts {
+        padding: 60px 8px;
+    }
+
+    .gifts-tab {
+        padding: 12px 8px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .gifts-cards {
+        padding: 0 27px;
+    }
+}
+
