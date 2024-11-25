@@ -688,7 +688,7 @@ body {
 
 .footer-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(417px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 12px;
     margin-bottom: 60px;
@@ -820,6 +820,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
+
+    .footer {
+        padding: 60px 30px;
+    }
 }
 
 @media screen and (max-width: 1225px) {
@@ -839,9 +843,11 @@ body {
         padding: 60px 30px;
     }
 
-    .footer {
-        padding: 60px 30px;
+    .footer-cards {
+        grid-template-columns: 1fr;
+    
     }
+
     
 }
 
