@@ -350,7 +350,7 @@ body {
 
 .footer-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(417px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 12px;
     margin-bottom: 60px;
@@ -483,10 +483,21 @@ body {
     }
 }
 
+@media screen and (max-width: 1310px) {
+    .footer {
+        padding: 60px 30px;
+    }
+}
+
 @media screen and (max-width: 1225px) {
     .header-logo {
         margin-left: 30px;
     }
+
+    .footer-cards {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media screen and (max-width: 1117px) {
@@ -503,7 +514,6 @@ body {
     .gft-button-up {
         display: block;
     }
-
 }
 
 @media screen and (max-width: 796px){
