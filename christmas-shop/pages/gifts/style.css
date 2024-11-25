@@ -541,8 +541,9 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-    .footer-card {
-        max-width: 364px;
+    .footer-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));
     }
 }
 

@@ -694,7 +694,6 @@ body {
 .footer-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(417px, 1fr));
-
     gap: 12px;
     margin-bottom: 60px;
 }
@@ -930,6 +929,13 @@ body {
     }
 
     .footer-card {
-        max-width: 364px;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));
     }
 }
