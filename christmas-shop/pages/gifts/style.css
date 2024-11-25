@@ -257,9 +257,9 @@ body {
 }
 
 .gifts-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     gap: 12px;
 }
 
@@ -477,9 +477,21 @@ body {
     color: #ff4646;
 }
 
+@media screen and (max-width: 1439px) {
+    .gifts-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (max-width: 1225px) {
     .header-logo {
         margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1117px) {
+    .gifts-cards{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -527,6 +539,12 @@ body {
 
     .footer {
         padding: 60px 8px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .gifts-cards{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
