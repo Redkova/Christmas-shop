@@ -926,7 +926,7 @@ body {
         transform: translateX(100%);
     }
 
-    .header-nav.open {
+    .header-nav.active {
         transform: translateX(0);
     }
 
