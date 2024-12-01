@@ -11,25 +11,25 @@
 
     menuLinks.forEach(link => {
         link.addEventListener('click', function (e) {
-            const href = link.getAttribute('href');
 
-            if (href.includes('#')) {
-                e.preventDefault();
+            if (link.dataset.action === 'close-menu') {
+                menu.classList.remove('active');
+                body.classList.remove('body-lock');
+                return;
             }
-
-            const linkID = href.split('#')[1];
-            const linkSection = document.getElementById(linkID);
             
-            if (linkSection) {
-                linkSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
-                })
+            if (link.getAttribute('href').startsWith('#')) {
+                const idElement = document.querySelector(link.getAttribute('href'));
+                if (idElement) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: idElement.offsetTop,
+                        behavior: 'smooth'
+                    })
+                }
+                
             }
 
-            burgerItem.classList.remove('active');
-            menu.classList.remove('active');
-            body.classList.remove('body-lock');
         });
     });
 
