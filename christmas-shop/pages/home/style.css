@@ -864,7 +864,6 @@ body {
 
     .footer-cards {
         grid-template-columns: 1fr;
-    
     }
 }
 
@@ -904,7 +903,6 @@ body {
         justify-content: center;
         flex-direction: column; 
         gap: 8px;
-        
     }
 
     .header-burger.active .burger-line:first-child {
