@@ -22,9 +22,13 @@
 
     menuLinks.forEach(link => {
         link.addEventListener('click', function (e) {
-            e.preventDefault();
+            const href = link.getAttribute('href');
 
-            const linkID = link.getAttribute('href').slice(1);
+            if (href.includes('#')) {
+                e.preventDefault();
+            }
+
+            const linkID = href.split('#')[1];
             const linkSection = document.getElementById(linkID);
             
             if (linkSection) {
