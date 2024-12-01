@@ -611,6 +611,10 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));
     }
+
+    .nav-list {
+        margin-top: 306px;
+    }
 }
 
 @media screen and (max-width: 380px) {

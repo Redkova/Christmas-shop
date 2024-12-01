@@ -1028,6 +1028,10 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));
     }
+
+    .nav-list {
+        margin-top: 306px;
+    }
 }
 
 @media (hover: none) and (pointer: coarse) {
