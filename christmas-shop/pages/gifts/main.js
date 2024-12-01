@@ -12,7 +12,9 @@
     menuLinks.forEach(link => {
         link.addEventListener('click', function (e) {
 
-            if (link.dataset.action === 'close-menu') {
+            if (link.textContent.trim().toLowerCase() === 'gifts') {
+                e.preventDefault();
+                burgerItem.classList.remove('active');
                 menu.classList.remove('active');
                 body.classList.remove('body-lock');
                 return;
@@ -21,14 +23,22 @@
             if (link.getAttribute('href').startsWith('#')) {
                 const idElement = document.querySelector(link.getAttribute('href'));
                 if (idElement) {
-                    e.preventDefault();
                     window.scrollTo({
                         top: idElement.offsetTop,
                         behavior: 'smooth'
                     })
                 }
+
+                burgerItem.classList.remove('active');
+                menu.classList.remove('active');
+                body.classList.remove('body-lock');
+                return;
                 
             }
+
+            burgerItem.classList.remove('active');
+            menu.classList.remove('active');
+            body.classList.remove('body-lock');
 
         });
     });
