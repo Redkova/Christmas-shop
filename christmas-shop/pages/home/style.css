@@ -965,6 +965,10 @@ body {
     margin-bottom: 8px;
     }
 
+    .body-lock {
+        overflow: hidden;
+    }
+
     .about {
     padding: 60px 8px;        
     }
