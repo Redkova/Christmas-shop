@@ -932,7 +932,9 @@ body {
     }
 
     .header-nav {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 100%;
         position: fixed; 
@@ -953,7 +955,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 412px;
+        justify-content: center;
         z-index: 5;
         width: 100%;
     }

@@ -68,3 +68,12 @@
         cardsContainer.appendChild(cards[j]);
     }
 })();
+
+/*
+(function () {
+    const tabs = document.querySelectorAll('.gifts-tab');
+    const cards = document.querySelectorAll('best-gft-card')
+
+
+})
+*/
