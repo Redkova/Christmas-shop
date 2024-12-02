@@ -164,7 +164,7 @@ body {
     position: fixed;
     right: 8px;
     bottom: 8px;
-    z-index: 10;
+    z-index: 3;
 }
 
 .gifts-content {
@@ -547,6 +547,7 @@ body {
         background-color: #ffffff;
         transform: translateX(100%);
         transition: 0.5s all linear;
+        z-index: 5;
     }
 
     .header-nav.active {
