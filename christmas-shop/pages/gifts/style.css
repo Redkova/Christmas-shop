@@ -490,10 +490,6 @@ body {
     .header {
         padding: 12px 15px;
     }
-
-    .gft-button-up {
-        display: block;
-    }
 }
 
 @media screen and (max-width: 796px){
@@ -592,6 +588,12 @@ body {
     .footer {
         padding: 60px 8px;
     }
+
+    .gft-button-up.visible {
+        display: block;
+    }
+
+
 }
 
 @media screen and (max-width: 767px) {

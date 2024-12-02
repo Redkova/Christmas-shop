@@ -3,6 +3,7 @@
     const menu = document.querySelector('.header-nav');
     const body = document.body;
     const menuLinks = document.querySelectorAll('.nav-item');
+
     burgerItem.addEventListener('click', () => {
         burgerItem.classList.toggle('active');
         menu.classList.toggle('active');
@@ -44,3 +45,18 @@
     });
 
 })();
+
+/* Button-up */
+(function () {
+    const buttonUp = document.querySelector('.gft-button-up');
+
+    const scrollButton = () => {
+        window.scrollY >= 300
+            ? buttonUp.classList.add('visible')
+            : buttonUp.classList.remove('visible')
+    };
+
+    window.addEventListener('scroll', scrollButton);
+})();
+
+
