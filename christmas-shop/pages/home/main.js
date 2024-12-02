@@ -8,17 +8,6 @@
         menu.classList.toggle('active');
         body.classList.toggle('body-lock');
     });
-    /*
-    if (window.innerWidth <= 768) {
-        for (let i = 0; i < menuLinks.length; i+=1) {
-            menuLinks[i].addEventListener('click', () => {
-                burgerItem.classList.remove('active');
-                menu.classList.remove('active');
-                body.classList.remove('body-lock')
-            });
-        }
-    }
-        */
 
     menuLinks.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -45,3 +34,39 @@
     });
 
 })();
+
+
+    const daysBlock = document.getElementById('days').querySelector('.cta-number');
+    const hoursBlock = document.getElementById('hours').querySelector('.cta-number');
+    const minutesBlock = document.getElementById('minutes').querySelector('.cta-number');
+    const secondsBlock = document.getElementById('seconds').querySelector('.cta-number');
+
+    const newYear = new Date(Date.UTC(2025, 0, 1, 0, 0, 0));
+
+const updateTimer = () => {
+    const today = Date.now();
+    const deltaTodayNewYear = newYear - today;
+
+if (deltaTodayNewYear <= 0) {
+    clearInterval(createTimer);
+    daysBlock.innerHTML = '0';
+    hoursBlock.innerHTML = '0';
+    minutesBlock.innerHTML = '0';
+    secondsBlock.innerHTML = '0';
+    return;
+}
+    const days = Math.floor(deltaTodayNewYear / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((deltaTodayNewYear % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((deltaTodayNewYear % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((deltaTodayNewYear % (1000 * 60)) / 1000);
+
+    daysBlock.innerHTML = days;
+    hoursBlock.innerHTML = hours;
+    minutesBlock.innerHTML = minutes;
+    secondsBlock.innerHTML = seconds;
+
+};
+
+const createTimer = setInterval(updateTimer, 1000);
+updateTimer();
+

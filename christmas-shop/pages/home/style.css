@@ -434,6 +434,12 @@ body {
     stroke: #FF4646;
 }
 
+.button-left.disabled,
+.button-right.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 .best-gifts {
     padding: 60px 82px;
     max-width: 1440px;
