@@ -59,4 +59,12 @@
     window.addEventListener('scroll', scrollButton);
 })();
 
+(function randomCards() {
+    const cardsContainer = document.querySelector('.gifts-cards');
+    const cards = document.querySelectorAll('.best-gft-card');
 
+    for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        cardsContainer.appendChild(cards[j]);
+    }
+})();
