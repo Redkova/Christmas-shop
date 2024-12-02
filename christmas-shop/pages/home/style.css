@@ -439,9 +439,11 @@ body {
 }
 
 .best-gft-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 12px;
 }
 
@@ -800,11 +802,6 @@ body {
 }    
 
 @media screen and (max-width: 1310px) {
-    .best-gft-cards {
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-
     .footer {
         padding: 60px 30px;
     }
@@ -957,13 +954,6 @@ body {
 
     .footer {
         padding: 60px 8px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .best-gft-cards {
-        grid-template-columns: 1fr;
-        justify-items: center;
     }
 }
 
