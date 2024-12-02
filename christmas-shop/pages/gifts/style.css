@@ -537,6 +537,7 @@ body {
     }
 
     .header-nav {
+        display: none;
         width: 100%;
         height: 100%;
         position: fixed; 
@@ -549,6 +550,7 @@ body {
     }
 
     .header-nav.active {
+        display: block;
         transform: translateX(0);
     }
 
@@ -562,6 +564,8 @@ body {
     }
 
     .nav-item {
+        background-color: #ffffff;
+        color: #181C29;
         max-width: 202px;
         font-size: 24px;
         line-height: 36.48px;
