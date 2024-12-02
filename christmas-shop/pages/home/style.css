@@ -39,8 +39,6 @@ body {
 }
 
 .header-logo {    
-    width: 141px;
-    height: 40px;
     border-radius: 12px;
     z-index: 15;
 }
@@ -67,14 +65,6 @@ body {
     margin-right: 20px;
     width: 69px;
 }
-/*
-.header-nav {
-    width: 1123px;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 12px;
-}
-    */
 
 .nav-list {
     display: flex;
@@ -128,42 +118,11 @@ body {
     height: 40px;
     z-index: 15;
 }
-/*
-.header-burger::before,
-.header-burger::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 1px;
-    background-color: #181c29;
-}
-
-.header-burger::before {
-    top: 0;
-}
-
-.header-burger::after {
-    top: 10;
-}
-*/
-
 
 .burger-line {
     width: 20px;
     border: solid 1px #181c29;
 }
-
-/*
-.burger-line:first-child {
-    top: 16px;
-    left: 10px
-}
-
-.burger-line:last-child {
-    bottom: 16px;
-    left: 10px;
-}
-*/
 
 .hero {
     padding-block: 60px;
