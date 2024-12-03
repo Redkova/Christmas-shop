@@ -934,7 +934,6 @@ body {
         overflow: hidden;
     }
 
-
     .about {
     padding: 60px 8px;        
     }
@@ -986,10 +985,6 @@ body {
     .footer-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));
-    }
-
-    .nav-list {
-        margin-top: 306px;
     }
 }
 
