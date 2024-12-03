@@ -72,7 +72,7 @@ const createTimer = setInterval(updateTimer, 1000);
 updateTimer();
 
 
-
+/*
 (function randomCards() {
     const cardsContainer = document.querySelector('.best-gft-cards');
     const cards = document.querySelectorAll('.best-gft-card');
@@ -83,4 +83,29 @@ updateTimer();
     }
 })();
 
+*/
+
+fetch('../../assets/gifts.json')
+    .then(response => response.json())
+    .then(data => {
+        const randomGiftCards = getRandomGiftCards(data, 4);
+
+        const cardContainer = document.querySelector('.gift-card-container');
+        randomGiftCards.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.classList.add('gift-card');
+            cardElement.innerHTML = `
+            <img class="gift-card-image" src="${card.image}" alt="${card.name}">
+            <div class="gift-card-category" style="color: ${card.categoryColor};">${card.category}</div>
+            <div class="gift-card-name">${card.name}</div>
+            `;
+
+            cardContainer.appendChild(cardElement);
+        });
+    })
+
+    function getRandomGiftCards(array, count) {
+        const randomCards = array.sort(() => 0.5 - Math.random());
+        return randomCards.slice(0, count);
+    }
 
