@@ -59,13 +59,26 @@
     window.addEventListener('scroll', scrollButton);
 })();
 
-(function randomCards() {
-    const cardsContainer = document.querySelector('.gifts-cards');
-    const cards = document.querySelectorAll('.best-gft-card');
+fetch('../../assets/gifts.json')
+    .then(response => response.json())
+    .then(data => {
 
-    for (let i = cards.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        cardsContainer.appendChild(cards[j]);
-    }
-})();
+        const randomCards = data.sort(() => 0.5 - Math.random());
+
+        const randomGiftCards = randomCards.slice(0, 36);
+
+        const cardContainer = document.querySelector('.gift-card-container');
+        randomGiftCards.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.classList.add('gift-card');
+            cardElement.innerHTML = `
+            <img class="gift-card-image" src="${card.image}" alt="${card.name}">
+            <div class="gift-card-category" style="color: ${card.categoryColor};">${card.category}</div>
+            <div class="gift-card-name">${card.name}</div>
+            `;
+
+            cardContainer.appendChild(cardElement);
+        });
+
+    })
 
