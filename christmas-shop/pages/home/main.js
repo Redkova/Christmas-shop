@@ -147,7 +147,7 @@ fetch('../../assets/gifts.json')
             const powerElement = document.createElement('div');
             powerElement.classList.add('superpower');
             powerElement.innerHTML = `
-                <span class="superpower-name">${powerName.toUpperCase()}</span>
+                <span class="superpower-name">${powerName}</span>
                 <span class="superpower-value">${powerValue}</span>
                 <span class="superpower-stars">${snowIcon}</span>
             `;
