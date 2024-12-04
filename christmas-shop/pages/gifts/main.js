@@ -177,4 +177,8 @@ function filterCards(category, tabId) {
     document.getElementById('for-health').addEventListener('click', () => filterCards('for health', 'for-health'));
     document.getElementById('for-harmony').addEventListener('click', () => filterCards('for harmony', 'for-harmony'));
 
-    activeTab('all');
+    document.addEventListener('DOMContentLoaded', () => {
+        activeTab('all');
+        filterCards('All', 'all');
+    });
+    

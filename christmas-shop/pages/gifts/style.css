@@ -229,15 +229,9 @@ body {
     text-decoration: none;
 }
 
-/*
-.gifts-tab:hover {
-    background-color: #ffffff33;
-}
-*/
-
 .gifts-tab.active {
-    background-color: #ffffff33;
     cursor: default;
+    background-color: #ffffff33;
 }
 
 .gift-card-container {
