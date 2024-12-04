@@ -463,6 +463,10 @@ body {
     border-top-right-radius: 20px;
 }
 
+.gift-card-text-container {
+    border-radius: 20px;
+}
+
 .gift-card-category {
     font-family: "Montserrat-SB";
     font-weight: 600;
@@ -797,6 +801,7 @@ body.modal-open {
     background-color: #181C29CC;
     z-index: 15;
     display: none;
+    cursor: pointer;
 }
 
 .modal-overlay.active {
@@ -858,7 +863,6 @@ body.modal-open {
 
 .modal-superpower{
     background-color: #ffffff;
-
 }
 
 .modal-superpower-header {
