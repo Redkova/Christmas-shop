@@ -149,7 +149,21 @@ function displayCards(cards) {
 
 }
 
-function filterCards(category) {
+    function activeTab(selectedTabId) {
+        const tabs = document.querySelectorAll('.gifts-tab');
+
+        tabs.forEach(tab => tab.classList.remove('active'));
+        
+        const selectedTab = document.getElementById(selectedTabId);
+        if (selectedTab) {
+            selectedTab.classList.add('active');
+        }
+    }
+
+function filterCards(category, tabId) {
+
+    activeTab(tabId);
+
     if (category === 'ALL') {
         displayCards(allCards);
     } else {
@@ -158,33 +172,9 @@ function filterCards(category) {
     }
 }
 
-document.getElementById('all').addEventListener('click', () => filterCards('ALL'));
-document.getElementById('for-work').addEventListener('click', () => filterCards('for work'));
-document.getElementById('for-health').addEventListener('click', () => filterCards('for health'));
-document.getElementById('for-harmony').addEventListener('click', () => filterCards('for harmony'));
+    document.getElementById('all').addEventListener('click', () => filterCards('ALL', 'all'));
+    document.getElementById('for-work').addEventListener('click', () => filterCards('for work', 'for-work'));
+    document.getElementById('for-health').addEventListener('click', () => filterCards('for health', 'for-health'));
+    document.getElementById('for-harmony').addEventListener('click', () => filterCards('for harmony', 'for-harmony'));
 
-
-
-
-/*
-fetch('../../assets/gifts.json')
-.then(response => response.json())
-.then(data => {
-    const randomCards = data.sort(() => 0.5 - Math.random())
-    const randomGiftCards = randomCards.slice(0, 36);
-    const cardContainer = document.querySelector('.gift-card-container');
-
-    randomGiftCards.forEach(card => {
-        const cardElement = document.createElement('div');
-        cardElement.classList.add('gift-card');
-        cardElement.innerHTML = `
-        <img class="gift-card-image" src="${card.image}" alt="${card.name}">
-        <div class="gift-card-category" style="color: ${card.categoryColor};">${card.category}</div>
-        <div class="gift-card-name">${card.name}</div>
-        `;
-
-        cardElement.addEventListener('click', () => showModal(card));
-        cardContainer.appendChild(cardElement);
-    });
-});
-*/
+    activeTab('all');

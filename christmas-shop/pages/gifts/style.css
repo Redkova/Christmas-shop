@@ -197,7 +197,6 @@ body {
 
 .gifts-tab:first-child {
     border-radius: 12px;
-    background-color: #ffffff33;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,8 +229,15 @@ body {
     text-decoration: none;
 }
 
+/*
 .gifts-tab:hover {
     background-color: #ffffff33;
+}
+*/
+
+.gifts-tab.active {
+    background-color: #ffffff33;
+    cursor: default;
 }
 
 .gift-card-container {
