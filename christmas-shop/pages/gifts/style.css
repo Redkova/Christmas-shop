@@ -422,6 +422,157 @@ body {
     color: #ff4646;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    width: 400px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: #ECF3F8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.modal.active{
+    display: block;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181C29CC;
+    z-index: 15;
+    display: none;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    display: block;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%;
+    height: 230px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-container {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.modal-text {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-category {
+    margin: 0;
+}
+
+.modal-name {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24.32px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #181C29;
+    margin: 8px 0 8px 0;
+}
+
+.modal-description {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.68px;
+    color: #181C29;
+    margin: 0;
+}
+
+.modal-superpower{
+    background-color: #ffffff;
+}
+
+.modal-superpower-header {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #181C29;
+}
+
+.modal-superpower-power {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.68px;
+    color: #181C29;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.superpower {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.superpower-name {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.superpower-name::first-letter {
+    text-transform: uppercase;
+}
+
+.superpower-value,
+.superpower-stars {
+    text-align: right;
+}
+
+.snow-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.snow-icon.filled {
+
+    fill: #FF4646;
+}
+
+.snow-icon.empty {
+    fill: #FF46461A;
+}
+
 @media screen and (max-width: 1439px) {
     .gifts-cards{
         grid-template-columns: repeat(3, 1fr);
