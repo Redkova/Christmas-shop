@@ -127,6 +127,7 @@ fetch('../../assets/gifts.json')
 
     function showModal(card) {
         const modal = document.querySelector('.modal');
+        const modalOverlay =document.querySelector('.modal-overlay');
         const modalImage = document.querySelector('.modal-image');
         const modalCategory = modal.querySelector('.modal-category');
         const modalName = document.querySelector('.modal-name');
@@ -151,16 +152,19 @@ fetch('../../assets/gifts.json')
                 <span class="superpower-value">${powerValue}</span>
                 <span class="superpower-stars">${snowIcon}</span>
             `;
-        modalSuperPowerContainer.appendChild(powerElement);
+            modalSuperPowerContainer.appendChild(powerElement);
         });
 
             modal.classList.add('active');
+            modalOverlay.classList.add('active');
             document.body.classList.add('modal-open');
     }
 
     function closeModal() {
         const modal = document.querySelector('.modal');
+        const modalOverlay = document.querySelector('.modal-overlay');
         modal.classList.remove('active');
+        modalOverlay.classList.remove('active');
         document.body.classList.remove('modal-open'); 
     }
 
