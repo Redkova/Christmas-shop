@@ -527,6 +527,8 @@ body.modal-open {
     text-transform: uppercase;
     font-weight: bold;
     color: #181C29;
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 .modal-superpower-power {
@@ -543,7 +545,7 @@ body.modal-open {
 .superpower {
     display: flex;
     justify-content: space-between;
-    gap: 8px;
+    gap: 12px;
 }
 .superpower-name {
     flex-grow: 1;
@@ -557,6 +559,7 @@ body.modal-open {
 .superpower-value,
 .superpower-stars {
     text-align: right;
+    gap: 12px;
 }
 
 .snow-icon {
@@ -565,7 +568,6 @@ body.modal-open {
 }
 
 .snow-icon.filled {
-
     fill: #FF4646;
 }
 
