@@ -764,17 +764,14 @@ body {
     color: #ff4646;
 }    
 
-
-
 body.modal-open {
     overflow: hidden;
 }
 
-
 .modal {
     display: none;
-    max-width: ;width: 400px;
-    height: 514px;
+    width: 400px;
+    height: auto;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -800,7 +797,6 @@ body.modal-open {
     background-color: #181C29CC;
     z-index: 15;
     display: none;
-
 }
 
 .modal-overlay.active {
@@ -1100,6 +1096,10 @@ body.modal-open {
 
     .footer-card {
         padding: 20px 0;
+    }
+
+    .modal {
+        width: 364px;
     }
 }
 
