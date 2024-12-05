@@ -168,7 +168,7 @@ updateTimer();
     let scrollStep = 0;
 
     const activeButton = () => {
-        buttonLeft,classList.toggle('disabled', currentClick === 0);
+        buttonLeft.classList.toggle('disabled', currentClick === 0);
         buttonRight.classList.toggle('disabled', currentClick >= totalClick);
 
         buttonLeft.classList.toggle('active', currentClick > 0);
@@ -179,8 +179,7 @@ updateTimer();
         const offset = currentClick * scrollStep;
         slider.style.transform = `translateX(-${offset}px)`;
 
-        buttonLeft.disabled = currentClick === 0;
-        buttonRight.disabled = currentClick >= totalClick;
+        activeButton();
     }; 
 
     const screenSize = () => {
@@ -220,8 +219,4 @@ updateTimer();
     window.addEventListener('resize', screenSize);
 
     screenSize();
-
-
-
-
 
