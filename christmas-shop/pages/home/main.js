@@ -167,6 +167,14 @@ updateTimer();
     let totalClick = 3;
     let scrollStep = 0;
 
+    const activeButton = () => {
+        buttonLeft,classList.toggle('disabled', currentClick === 0);
+        buttonRight.classList.toggle('disabled', currentClick >= totalClick);
+
+        buttonLeft.classList.toggle('active', currentClick > 0);
+        buttonRight.classList.toggle('active', currentClick < totalClick);
+    };
+
     const scrollSlider = () => {
         const offset = currentClick * scrollStep;
         slider.style.transform = `translateX(-${offset}px)`;

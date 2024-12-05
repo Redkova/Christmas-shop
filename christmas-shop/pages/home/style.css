@@ -292,6 +292,7 @@ body {
 .slider-slides {
     display: flex;
     flex-direction: row;
+    transition: 0.5s;
 }
 
 .slider-text {
@@ -384,18 +385,10 @@ body {
     margin-left: 20px;
 }
 
-.button-right:hover {
+.button.left.active .arrow-left,
+.button-right.active .arrow-right {
     background-color: #ffffff;
-}
-
-.button-right:hover .arrow-right{
     stroke: #FF4646;
-}
-
-.button-left.disabled,
-.button-right.disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
 }
 
 .best-gifts {
