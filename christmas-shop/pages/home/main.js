@@ -183,7 +183,7 @@ updateTimer();
     }; 
 
     const screenSize = () => {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth <= 768) {
             totalClick = 6;
         } else {
             totalClick = 3;
@@ -195,7 +195,7 @@ updateTimer();
             0
         );
 
-        scrollStep = (totalWidth - visibleWidth) / (totalClick - 1);
+        scrollStep = (totalWidth - visibleWidth) / (totalClick - 0.65);
 
         currentClick = 0;
         scrollSlider();
