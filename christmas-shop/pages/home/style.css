@@ -292,7 +292,7 @@ body {
 .slider-slides {
     display: flex;
     flex-direction: row;
-    transition: 0.5s;
+    transition-duration: 1s;
 }
 
 .slider-text {
