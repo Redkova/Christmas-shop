@@ -163,40 +163,49 @@ updateTimer();
     const buttonLeft = document.querySelector('.button-left');
     const buttonRight = document.querySelector('.button-right');
 
-    let currentSlide = 0;
-    let slidesToShow = 3;
-    const totalSlides = slider.children.length;
+    let currentClick = 0;
+    let totalClick = 3;
+    let scrollStep = 0;
 
-    const updateSlider = () => {
-        const slideWidth = slider.children[0].offsetWidth;
-        const offset = currentSlide * slideWidth;
+    const scrollSlider = () => {
+        const offset = currentClick * scrollStep;
         slider.style.transform = `translateX(-${offset}px)`;
 
-        buttonLeft.disabled = currentSlide === 0;
-        buttonRight.disabled = currentSlide >= totalSlides - slidesToShow;
-    };
+        buttonLeft.disabled = currentClick === 0;
+        buttonRight.disabled = currentClick >= totalClick;
+    }; 
 
     const screenSize = () => {
-        if (window.innerWidth <= 768) {
-            slidesToShow = 6;
+        if (window.innerWidth < 768) {
+            totalClick = 6;
         } else {
-            slidesToShow = 3;
+            totalClick = 3;
         }
-        currentSlide = 0;
-        updateSlider();
+
+        const visibleWidth = slider.parentElement.offsetWidth;
+        const totalWidth = Array.from(slider.children).reduce(
+            (sum, slide) => sum + slide.offsetWidth,
+            0
+        );
+
+        scrollStep = (totalWidth - visibleWidth) / (totalClick - 1);
+
+        currentClick = 0;
+        scrollSlider();
     };
 
+
     buttonRight.addEventListener('click', () => {
-        if (currentSlide < totalSlides -slidesToShow){
-            currentSlide++;
-            updateSlider();
+        if (currentClick < totalClick) {
+            currentClick++;
+            scrollSlider();
         }
     });
 
     buttonLeft.addEventListener('click', () => {
-        if (currentSlide > 0) {
-            currentSlide--;
-            updateSlider();
+        if (currentClick > 0) {
+            currentClick--;
+            scrollSlider();
         }
     });
 

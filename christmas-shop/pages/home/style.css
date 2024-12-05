@@ -279,6 +279,7 @@ body {
     background-size: cover, contain, auto;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 .slider-text-content {
@@ -317,7 +318,6 @@ body {
 }
 
 .slider-slides-text {
-    width: ;
     font-family: "Montserrat-SB";
     font-weight: 600;
     font-size: 80px;
