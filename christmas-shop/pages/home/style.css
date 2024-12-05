@@ -352,6 +352,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 .button-right {
@@ -365,7 +367,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 
 .arrow-left {
@@ -1008,6 +1010,7 @@ body.modal-open {
         justify-content: center;
         flex-direction: column; 
         gap: 8px;
+        transition: 0.5s;
     }
 
     .header-burger.active .burger-line:first-child {
@@ -1047,7 +1050,7 @@ body.modal-open {
 
     .header-nav.active {
         transform: translateX(0);
-        transition: transform 0.5s ease;
+        transition: 0.5s ease;
     }
 
     .nav-list {
