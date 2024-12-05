@@ -627,6 +627,7 @@ body.modal-open {
         justify-content: center;
         flex-direction: column; 
         gap: 8px;
+        transition: 0.5s;
     }
 
     .header-burger.active .burger-line:first-child {
