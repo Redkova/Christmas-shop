@@ -491,6 +491,12 @@ body.modal-open {
 }
 
 .modal-category {
+    font-family: "Montserrat-SB";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15.6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     margin: 0;
 }
 
